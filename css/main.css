@@ -1,3 +1,27 @@
 img {
   width: 300px;
 }
+
+nav {
+  background-color: lightcoral;
+}
+
+#section-hero {
+  background-color: lightsalmon;
+}
+
+#section-portfolio {
+  background-color: palegoldenrod;
+}
+
+#section-about {
+  background-color: mediumaquamarine;
+}
+
+#section-contact {
+  background-color: lightskyblue;
+}
+
+footer {
+  background-color: plum;
+}
