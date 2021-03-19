@@ -11,35 +11,52 @@
 <body>
 
   <nav>
-    <a href="#">Portfolio</a>
-    <a href="#">About</a>
-    <button>Contact</button>
+    <div id="navbar">
+      <ul id="nav-list" class="clearfix">
+        <li><a href="#section-contact" class="nav-link">Contact</a></li>
+        <li><a href="#section-about" class="nav-link">About</a></li>
+        <li><a href="#section-portfolio" class="nav-link">Portfolio</a></li>
+      </ul>
+    </div>
   </nav>
 
   <main>
     <section id="section-hero">
-      <h1>Hi! I'm Marina</h1>
-      <h2>Second phrase here</h2>
-      <p>Ideas:</p>
-      <p>Developer. Designer. Life-long Learner.</p>
-      <p>I love coding for both function and code.</p>
-      <p>I'm passionate about _____.</p>
+      <h1>Hi! I'm <span>Marina Russ</span>.</h1>
+      <br>
+      <h2>I'm a front-end web developer.</h2>
     </section>
 
     <section id="section-portfolio">
         <h2>Portfolio:</h2>
       <div id="content-portfolio">
-        <div id="project-1" class="project-card">
-          <h3>Project 1</h3>
-          <img src="https://via.placeholder.com/250" alt="">
+
+        <div id="project-1" class="project-wrapper">
+          
+          <img src="img/proj-astro.png" alt="" class="responsive-img">
+          <div class="project-card">
+            <h3>Project 1</h3>
+            <h4 class="tech-stack">HTML, CSS, JavaScript</h4>
+            <p class="project-summary">Short summary of project goes here.</p>
+          </div>
         </div>
-        <div id="project-2" class="project-card">
-          <h3>Project 2</h3>
-          <img src="https://via.placeholder.com/250" alt="">
+
+        <div id="project-2" class="project-wrapper">
+          <img src="img/proj-weather.png" alt="" class="responsive-img">
+          <div class="project-card">
+            <h3>Project 2</h3>
+            <h4 class="tech-stack">HTML, CSS, JavaScript</h4>
+            <p class="project-summary">Short summary of project goes here.</p>
+          </div>
         </div>
-        <div id="project-3" class="project-card">
-          <h3>Project 3</h3>
-          <img src="https://via.placeholder.com/250" alt="">
+
+        <div id="project-3" class="project-wrapper">
+          <img src="img/proj-portfolio.png" alt="" class="responsive-img">
+          <div class="project-card">
+            <h3>Project 3</h3>
+            <h4 class="tech-stack">HTML, CSS, JavaScript</h4>
+            <p class="project-summary">Short summary of project goes here.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -60,8 +77,8 @@
         </div>
 
         <div id="content-about-cat">
-          <img src="img/freyja1.jpg" alt="nyx cat photo" class="response-img">
-          <img src="img/nyx3.jpg" alt="freyja cat photo" class="response-img">
+          <img src="img/cats2.jpg" alt="freyja cat photo" class="response-img">
+          <img src="img/cats1.jpg" alt="nyx cat photo" class="response-img">
         </div>
 
       </div>
@@ -80,12 +97,15 @@
   </main>
 
   <footer>
-    <!-- * social media icons here -->
-    <h5>Social Media:</h5>
-    <button>linkedin</button>
-    <button>github</button>
-    <button>twitter</button>
+    <div id="footer-content">
+      <!-- * social media icons here -->
+      <h5>Social Media:</h5>
+      <button>linkedin</button>
+      <button>github</button>
+      <button>twitter</button>
+    </div>
   </footer>
+
 
   <script src="js/script.js"></script>
 </body>

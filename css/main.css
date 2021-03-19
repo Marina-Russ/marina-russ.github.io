@@ -1,9 +1,5 @@
 /** ===== TEMPORARY ==== **/
 
-img {
-  border-radius: 200px;
-}
-
 nav {
   background-color: lightcoral;
 }
@@ -28,6 +24,31 @@ footer {
 /******************************/
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #292a2d;
+  
+  /* ? color theme
+  #2992bf;
+  #4cbed9;
+  #292c17;
+  #f9f6ef;
+  #f0742a;
+  
+  */
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  padding: 5px;
+  border: 1px solid black;
 }
 
 /** ======= CSS GRID ======= **/
@@ -35,8 +56,14 @@ body {
 main {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
   max-width: 1000px;
+  margin: 0 auto;
+}
+
+#navbar,
+#footer-content {
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 section {
@@ -45,7 +72,7 @@ section {
 
 .responsive-img {
   width: 100%;
-  max-widtH: 400px;
+  max-width: 500px;
   height: auto;
 }
 
@@ -69,6 +96,26 @@ section {
 /** ========== NAV ========= **/
 /******************************/
 
+#navbar {
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+#nav-list {
+  float: right;
+  margin: 0 auto;
+  padding: 0;
+}
+
+#navbar li {
+  float: right;
+  
+  padding: 10px 15px;
+}
+
+#navbar li:first-of-type {
+  padding-right: 25px
+}
 
 
 /******************************/
@@ -85,7 +132,7 @@ section {
   display: block;
 }
 
-.project-card {
+.project-wrapper {
   border: 1px solid black;
   margin: 0 auto;
 }
@@ -96,6 +143,7 @@ section {
 /*makes all images in the section responsive*/
 #section-about img {
   width: 100%;
+  border-radius: 200px;
 }
 
 #content-about-photo,
@@ -115,8 +163,6 @@ section {
 #content-about-cat {
   width: 40%;
 }
-
-
 
 #about-pic {
   margin: 0 auto;
@@ -148,8 +194,14 @@ section {
 /** ==== MEDIA QUERIES ===== **/
 /******************************/
 
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 600px) {
   
+  .responsive-img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+
   #content-about {
   flex-flow: row wrap;
   }
@@ -161,4 +213,12 @@ section {
     width: 50%;
   }
 
+}
+
+@media screen and (min-width: 900px) {
+  .responsive-img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
 }
