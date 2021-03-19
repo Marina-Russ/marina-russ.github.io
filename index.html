@@ -6,24 +6,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Marina's Portfolio</title>
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/grid.css">
+  <!-- fontawesome -->>
+  <script src="https://kit.fontawesome.com/d1d27ac11f.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-  <nav>
+  <nav id="section-nav">
     <div id="navbar">
-      <ul id="nav-list" class="clearfix">
-        <li><a href="#section-contact" class="nav-link">Contact</a></li>
-        <li><a href="#section-about" class="nav-link">About</a></li>
-        <li><a href="#section-portfolio" class="nav-link">Portfolio</a></li>
-      </ul>
+      <a href="#section-contact" class="nav-link">Contact</a>
+      <a href="#section-about" class="nav-link">About</a>
+      <a href="#section-portfolio" class="nav-link">Portfolio</a>
     </div>
   </nav>
 
   <main>
     <section id="section-hero">
       <h1>Hi! I'm <span>Marina Russ</span>.</h1>
-      <br>
       <h2>I'm a front-end web developer.</h2>
     </section>
 
@@ -33,7 +31,7 @@
 
         <div id="project-1" class="project-wrapper">
           
-          <img src="img/proj-astro.png" alt="" class="responsive-img">
+          <img src="img/proj-astro.png" alt="" class="responsive-img project-img">
           <div class="project-card">
             <h3>Project 1</h3>
             <h4 class="tech-stack">HTML, CSS, JavaScript</h4>
@@ -42,7 +40,7 @@
         </div>
 
         <div id="project-2" class="project-wrapper">
-          <img src="img/proj-weather.png" alt="" class="responsive-img">
+          <img src="img/proj-weather.png" alt="" class="responsive-img project-img">
           <div class="project-card">
             <h3>Project 2</h3>
             <h4 class="tech-stack">HTML, CSS, JavaScript</h4>
@@ -51,7 +49,7 @@
         </div>
 
         <div id="project-3" class="project-wrapper">
-          <img src="img/proj-portfolio.png" alt="" class="responsive-img">
+          <img src="img/proj-portfolio.png" alt="" class="responsive-img project-img">
           <div class="project-card">
             <h3>Project 3</h3>
             <h4 class="tech-stack">HTML, CSS, JavaScript</h4>
@@ -66,46 +64,41 @@
 
       <div id="content-about">
 
-        <div id="content-about-photo">
-          <img src="img/icon-image.jpg" alt="self photo" id="my-pic" class="response-img">
-        </div>
-
         <div id="content-about-text">
           <p>First sentence/paragraph.</p>
           <p>Second sentence/paragraph.</p>
           <p>Third sentence/paragraph.</p>
         </div>
 
-        <div id="content-about-cat">
-          <img src="img/cats2.jpg" alt="freyja cat photo" class="response-img">
-          <img src="img/cats1.jpg" alt="nyx cat photo" class="response-img">
+        <div id="content-about-photos">
+          <div class="responsive-div">
+            <img src="img/icon-image.jpg" alt="self photo" id="my-pic-below" class="responsive-img">
+          </div>
+          <div class="responsive-div">
+            <img src="img/cats1.jpg" alt="pet photo" class="responsive-img">
+          </div>
         </div>
 
       </div>
     </section>
 
     <section id="section-contact">
-      <h2>Contact Me:</h2>
       <div id="content-contact">
-        <address>
-          <a href="mailto:mruss@alumni.nmu.edu">mruss@alumni.nmu.edu</a><br>
-          <a href="tel:+12489967341">(248) 996-7341</a>
-        </address>
+        <h2>Contact Me:</h2>
+        <ul>
+          <li><a href="tel:248-996-7341"><i class="fas fa-phone-alt"></i>(248) 996 - 7341</a></li>
+          <li><a href="email:mruss@alumni.nmu.edu"><i class="fas fa-envelope"></i>mruss@alumni.nmu.edu</a></li>
+          <li><a href="https://github.com/marina-russ"><i class="fab fa-github"></i>GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/marinaruss/"><i class="fab fa-linkedin"></i>LinkedIn</a></li>
+        </ul>
       </div>
     </section>
 
   </main>
 
   <footer>
-    <div id="footer-content">
-      <!-- * social media icons here -->
-      <h5>Social Media:</h5>
-      <button>linkedin</button>
-      <button>github</button>
-      <button>twitter</button>
-    </div>
+    <p>Made with love~</p>
   </footer>
-
 
   <script src="js/script.js"></script>
 </body>
