@@ -1,27 +1,164 @@
+/** ===== TEMPORARY ==== **/
+
 img {
-  width: 300px;
+  border-radius: 200px;
 }
 
 nav {
   background-color: lightcoral;
 }
-
 #section-hero {
   background-color: lightsalmon;
 }
-
 #section-portfolio {
   background-color: palegoldenrod;
 }
-
 #section-about {
   background-color: mediumaquamarine;
 }
-
 #section-contact {
   background-color: lightskyblue;
 }
-
 footer {
   background-color: plum;
+}
+
+/******************************/
+/** ===== GLOBAL STYLES ==== **/
+/******************************/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/** ======= CSS GRID ======= **/
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+section {
+  width: 100%;
+}
+
+.responsive-img {
+  width: 100%;
+  max-widtH: 400px;
+  height: auto;
+}
+
+/** ======= FLEX BOX ======= **/
+
+#content-portfolio {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#content-about {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+#content-contact {
+  display: flex;
+  flex-flow: row wrap;
+}
+/******************************/
+/** ========== NAV ========= **/
+/******************************/
+
+
+
+/******************************/
+/** ========= HERO ========= **/
+/******************************/
+
+
+
+/******************************/
+/** ======= PORTFOLIO ====== **/
+/******************************/
+
+#section-portfolio h3 {
+  display: block;
+}
+
+.project-card {
+  border: 1px solid black;
+  margin: 0 auto;
+}
+
+/******************************/
+/** ========= ABOUT ======== **/
+/******************************/
+/*makes all images in the section responsive*/
+#section-about img {
+  width: 100%;
+}
+
+#content-about-photo,
+#content-about-cat,
+#content-about-text {
+  margin: 0 auto;
+}
+
+#content-about-photo {
+  width: 55%;
+}
+
+#content-about-text {
+  width: 80%;
+}
+
+#content-about-cat {
+  width: 40%;
+}
+
+
+
+#about-pic {
+  margin: 0 auto;
+}
+
+#section-about p,
+#section-about img {
+  border: 1px solid black;
+}
+
+/******************************/
+/** ======== CONTACT ======= **/
+/******************************/
+
+
+/******************************/
+/** ======= FOOTER ========= **/
+/******************************/
+
+
+
+
+
+
+
+
+
+/******************************/
+/** ==== MEDIA QUERIES ===== **/
+/******************************/
+
+@media screen and (min-width: 550px) {
+  
+  #content-about {
+  flex-flow: row wrap;
+  }
+  #content-about-photo,
+  #content-about-cat {
+    width: 25%;
+  }
+  #content-about-text {
+    width: 50%;
+  }
+
 }
