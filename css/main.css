@@ -7,14 +7,14 @@
 }
 
 /** ===== TEMPORARY ==== **/
-span {
-  color: mediumaquamarine;
-}
-nav {
+#section-nav {
   background-color: #333;
 }
 #section-hero {
   height: 400px;
+}
+#section-intro {
+  background-color: coral;
 }
 #section-about {
   background-color: mediumaquamarine;
@@ -28,6 +28,9 @@ body {
   font-size: 18px;
   margin: 0;
   background-color: #292a2d;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
 }
 
 main {
@@ -36,9 +39,10 @@ main {
   max-width: 1000px;
   margin: 0 auto;
 }
+
 /* ! currently nav bar is 48px tall with padding */
 main {
-  margin-top: 48px; 
+  margin-top: 38px; 
 }
 
 ul {
@@ -69,38 +73,22 @@ section {
 
 .responsive-img {
   width: 100%;
-  max-width: 500px;
   height: auto;
-}
-
-/** ======= FLEX BOX ======= **/
-
-#content-portfolio {
-  display: flex;
-  flex-flow: row wrap;
-}
-
-#content-about {
-  display: flex;
-  flex-flow: column wrap;
 }
 
 /******************************/
 /** ========== NAV ========= **/
 /******************************/
 
-#navbar,
+/* #navbar,
 #footer-content {
-  max-width: 1000px;
-  margin: 0 auto;
-}
+  margin: 0;
+} */
 
 #section-nav {
-  width: 100%;
   background-color: var(--nav-bkgd);
+  padding: 5px 0;
 }
-
-
 
 #navbar a {
   float: right;
@@ -112,6 +100,18 @@ section {
   text-decoration: none;
   border-radius: 10px;
   cursor: pointer;
+}
+
+/* attached to the navbar via JavaScript */
+.sticky {
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+/* add top padding to <main> content so that the fixed nav bar doesn't hide anything */
+.sticky + .content {
+  padding-top: 35px;
 }
 
 .cta {
@@ -133,14 +133,34 @@ section {
 
 h1 {
   font-size: 2.5em;
+  color: mediumaquamarine;
 }
 h2 {
   font-size: 2em;
 }
 
 /******************************/
+/** ========= INTRO ======== **/
+/******************************/
+
+#section-intro {
+  display: flex;
+  flex-direction: row;
+}
+
+#my-pic-intro {
+  border-radius: 300px;
+  max-width: 250px;
+}
+
+/******************************/
 /** ======= PORTFOLIO ====== **/
 /******************************/
+
+#content-portfolio {
+  display: flex;
+  flex-flow: row wrap;
+}
 
 #section-portfolio {
   margin-bottom: 30px;
@@ -153,6 +173,7 @@ h2 {
 
 .project-img {
   padding-bottom: 20px;
+  max-width: 300px;
 }
 
 .project-wrapper {
@@ -161,7 +182,6 @@ h2 {
   background-color: mediumaquamarine;
   margin: 0 auto;
   padding: 10px;
-
 }
 
 /******************************/
@@ -169,7 +189,21 @@ h2 {
 /******************************/
 /*makes all images in the section responsive*/
 
-#content-about-text {
+#content-about {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+#content-about-photos {
+  display: flex;
+  flex-direction: row;
+}
+
+.cat-img {
+  max-width: 200px;
+}
+
+/* #content-about-text {
   text-align: center;
   font-size: 20px;
 }
@@ -177,6 +211,7 @@ h2 {
 #content-about-photos {
   display: flex;
   flex-direction: row;
+  max-width: 500px;
 }
 
 #content-about-photos img {
@@ -186,7 +221,7 @@ h2 {
 .responsive-div {
   width: 35%;
   margin: 0 auto;
-}
+} */
 
 /******************************/
 /** ======== CONTACT ======= **/
@@ -250,7 +285,7 @@ footer {
 
 @media screen and (min-width: 650px) {
 
-  .responsive-img {
+  /* .responsive-img {
     width: 100%;
     max-width: 300px;
     height: auto;
@@ -258,7 +293,7 @@ footer {
   .responsive-div {
     height: 280px;
     width: 25%;
-  }
+  } */
   #content-contact {
     margin: 0 auto 70px;
     padding: 10px;
@@ -275,7 +310,6 @@ footer {
 @media screen and (min-width: 950px) {
   .responsive-img {
     width: 100%;
-    max-width: 300px;
     height: auto;
   }
 }
