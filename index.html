@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Marina's Portfolio</title>
   <link rel="stylesheet" href="css/main.css">
-  <!-- fontawesome -->>
+  <!-- fontawesome -->
   <script src="https://kit.fontawesome.com/d1d27ac11f.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
 
   <section id="section-hero">
@@ -26,7 +28,9 @@
 
   <main class="content">
     <section id="section-intro">
-      <img src="img/icon-image.jpg" alt="self photo" id="my-pic-intro" class="responsive-img">
+      <div id="intro-img" class="responsive-img">
+        <img src="img/icon-image.jpg" alt="self photo" id="my-pic-intro">
+      </div>
       <div id="intro-text">
         <p>Hi! I'm Marina, it's nice to meet you!</p>
         <p>I'm a front-end developer learning back-end development through MSU's Boot Camp.</p>
@@ -35,36 +39,110 @@
     </section>
 
     <section id="section-portfolio">
-        <h2>Portfolio:</h2>
+      <h2>Portfolio:</h2>
       <div id="content-portfolio">
 
         <div id="project-1" class="project-wrapper">
-          
-          <img src="img/proj-astro.png" alt="" class="responsive-img project-img">
-          <div class="project-card">
-            <h3>Project 1</h3>
-            <h4 class="tech-stack">HTML, CSS, JavaScript</h4>
-            <p class="project-summary">Short summary of project goes here.</p>
+          <div class="card-top">
+            <h3>Astroplanner</h3>
+            <h4 class="tech-stack">HTML5, CSS3, JavaScript, API</h4>
+          </div>
+          <div class="card-img">
+            <img src="img/proj-astro.png" alt="" class="responsive-img project-img">
+          </div>
+          <div class="card-bottom">
+            <p class="project-summary">A user-friendly, mobile-first open source web application to plan your nights of star-gazing.</p>
+
+            <a href="https://fiskoal.github.io/astroplanner/" class="github-btn project-btn"><i class="icon-project fab fa-github"></i>App</a>
+
+            <a href="https://github.com/marina-russ/astroplanner" class="readme-btn project-btn"><i class="icon-project fab fa-readme"></i> readme.md</a>
           </div>
         </div>
 
         <div id="project-2" class="project-wrapper">
-          <img src="img/proj-hirugohan.png" alt="" class="responsive-img project-img">
-          <div class="project-card">
-            <h3>Project 2</h3>
-            <h4 class="tech-stack">HTML, CSS, JavaScript</h4>
-            <p class="project-summary">Short summary of project goes here.</p>
+          <div class="card-top">
+            <h3>Weather Dashboard</h3>
+            <h4 class="tech-stack">HTML5, CSS3, JavaScript, API</h4>
+          </div>
+          <div class="card-img">
+            <img src="img/proj-weather.png" alt="" class="responsive-img project-img">
+          </div>
+          <div class="card-bottom">
+            <p class="project-summary">A simple weather forecast application and my first use of API!</p>
+            <a href="https://marina-russ.github.io/weather-dashboard/" class="github-btn project-btn"><i class="icon-project fab fa-github"></i>App</a>
+            <a href="https://github.com/marina-russ/weather-dashboard" class="readme-btn project-btn"><i class="icon-project fab fa-readme"></i> readme.md</a>
           </div>
         </div>
 
         <div id="project-3" class="project-wrapper">
-          <img src="img/proj-portfolio.png" alt="" class="responsive-img project-img">
-          <div class="project-card">
-            <h3>Project 3</h3>
-            <h4 class="tech-stack">HTML, CSS, JavaScript</h4>
-            <p class="project-summary">Short summary of project goes here.</p>
+          <div class="card-top">
+            <h3>Portfolio Version 0.1</h3>
+            <h4 class="tech-stack">HTML5, CSS3</h4>
+          </div>
+          <div class="card-img">
+            <img src="img/proj-portfolio.png" alt="" class="responsive-img project-img">
+          </div>
+          <div class="card-bottom">
+            <p class="project-summary">The first portfolio page that I created, with lots of <code>:hover</code> effects.</p>
+            <a href="https://marina-russ.github.io/portfolio-of-work/" class="github-btn project-btn"><i class="icon-project fab fa-github"></i>Site</a>
+
+            <a href="https://github.com/marina-russ/portfolio-of-work" class="readme-btn project-btn"><i class="icon-project fab fa-readme"></i> readme.md</a>
           </div>
         </div>
+
+        <div id="project-4" class="project-wrapper">
+          <div class="card-top">
+            <h3>Code Quiz Challenge</h3>
+            <h4 class="tech-stack">HTML5, CSS3, JavaScript</h4>
+          </div>
+          <div class="card-img">
+            <img src="img/proj-quiz.png" alt="" class="responsive-img project-img">
+          </div>
+          <div class="card-bottom">
+            <p class="project-summary">A timed JavaScript coding quiz with multiple-choice questions featuring usage of <code>localStorage</code>!</p>
+            <a href="https://marina-russ.github.io/code-quiz/" class="github-btn project-btn"><i class="icon-project fad fa-github"></i>App</a>
+
+            <a href="https://github.com/marina-russ/code-quiz" class="readme-btn project-btn"><i class="icon-project fab fa-readme"></i> readme.md</a>
+          </div>
+        </div>
+
+        <div id="project-5" class="project-wrapper">
+          <div class="card-top">
+            <h3>Workday Scheduler</h3>
+            <h4 class="tech-stack">HTML5, CSS3, JavaScript</h4>
+          </div>
+          <div class="card-img">
+            <img src="img/proj-scheduler.png" alt="" class="responsive-img project-img">
+          </div>
+          <div class="card-bottom">
+            <p class="project-summary">A simple calendar app to save events for each hour of the day.</p>
+
+            <a href="https://marina-russ.github.io/workday-scheduler/" class="github-btn project-btn">
+            <i class="icon-project fad fa-github"></i>App</a>
+            
+            <a href="https://github.com/marina-russ/workday-scheduler" class="readme-btn project-btn"><i
+                class="icon-project fab fa-readme"></i> readme.md</a>
+          </div>
+        </div>
+
+        <div id="project-6" class="project-wrapper">
+          <div class="card-top">
+            <h3>HiruGOhan</h3>
+            <h4 class="tech-stack">HTML5, CSS3, jQuery</h4>
+          </div>
+          <div class="card-img">
+            <img src="img/proj-hirugohan.png" alt="" class="responsive-img project-img">
+          </div>
+          <div class="card-bottom">
+            <p class="project-summary">Homepage for a fictional food delivery company I created.</p>
+
+            <a href="https://marina-russ.github.io/hirugohan/" class="github-btn project-btn"><i class="icon-project fad fa-github"></i>Site</a>
+
+            <a href="https://github.com/marina-russ/hirugohan" class="readme-btn project-btn"><i class="icon-project fab fa-readme"></i> readme.md</a>
+          </div>
+        </div>
+
+
       </div>
     </section>
 
@@ -74,20 +152,19 @@
       <div id="content-about">
 
         <div id="content-about-text">
-          <p>First sentence/paragraph.</p>
-          <p>Second sentence/paragraph.</p>
-          <p>Third sentence/paragraph.</p>
-        </div>
+          <p>My passion is making sites/apps that are both functional and beautiful. I love learning new things, and I'm familiar with the foundations of visual design, information architecture, UX, and accessibility.</p>
+          <p>I have a wonderful husband and two adorable cats. There might be a terrifyingly large number of photos of my cats on my phone&mldr; I can speak Canadian French, and know a few phrases in Japanese and Russian (languages are fascinating!)</p>
+          <p>In my free time, you can often find me playing RPG or adventure video games, reading a book, or making colorful  spreadsheets on GoogleDocs for random things. Also, red pandas are objectively the cutest animal after cats.</p>
 
+        </div>
         <div id="content-about-photos">
-          <div class="responsive-div">
-            <img src="img/freyja1.jpg" alt="freyja photo" id="my-pic-below" class="responsive-img cat-img">
+          <div id="freyja" class="cat-img">
+            <img src="img/freyja1.jpg" alt="freyja photo" class="responsive-img cat-img">
           </div>
-          <div class="responsive-div">
+          <div id="nyx" class="cat-img">
             <img src="img/nyx1.jpg" alt="nyx photo" class="responsive-img cat-img">
           </div>
         </div>
-
       </div>
     </section>
 
@@ -95,10 +172,10 @@
       <div id="content-contact">
         <h2>Contact Me:</h2>
         <ul>
-          <li><a href="tel:248-996-7341"><i class="fas fa-phone-alt"></i>(248) 996 - 7341</a></li>
-          <li><a href="email:mruss@alumni.nmu.edu"><i class="fas fa-envelope"></i>mruss@alumni.nmu.edu</a></li>
-          <li><a href="https://github.com/marina-russ"><i class="fab fa-github"></i>GitHub</a></li>
-          <li><a href="https://www.linkedin.com/in/marinaruss/"><i class="fab fa-linkedin"></i>LinkedIn</a></li>
+          <li><a class="contact-info" href="tel:248-996-7341"><i class="icon-contact fas fa-phone-alt"></i>(248) 996-7341</a></li>
+          <li><a class="contact-info" href="email:mruss@alumni.nmu.edu"><i class="icon-contact fas fa-envelope"></i>mruss@alumni.nmu.edu</a></li>
+          <li><a class="contact-profile" href="https://github.com/marina-russ"><i class="icon-profile fab fa-github"></i>GitHub Profile</a></li>
+          <li><a class="contact-profile" href="https://www.linkedin.com/in/marinaruss/"><i class="icon-profile fab fa-linkedin"></i>LinkedIn Profile</a></li>
         </ul>
       </div>
     </section>
@@ -106,9 +183,10 @@
   </main>
 
   <footer>
-    <p>Made with love~</p>
+    <p>&copy Marina Russ</p>
   </footer>
 
   <script src="js/script.js"></script>
 </body>
+
 </html>
