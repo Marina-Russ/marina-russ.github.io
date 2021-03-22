@@ -58,7 +58,7 @@ main {
   display: flex;
   flex-direction: column;
   max-width: 1000px;
-  margin: 20px auto 0;
+  margin: 0 auto;
 }
 
 ul {
@@ -96,29 +96,44 @@ section {
   height: auto;
 }
 
+#section-portfolio,
+#section-contact {
+  margin: 20px 0;
+}
+
 /******************************/
 /** ========= HERO ========= **/
 /******************************/
 
 #section-hero {
   color: var(--white);
-  background-image: linear-gradient(-225deg, #2CD8D5 0%, #6B8DD6 48%, #8E37D7 100%);
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url(../img/forest.jpg);
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 3em;
   color: mediumaquamarine;
+  padding-top: 20%;
 }
 h2 {
   font-size: 2em;
 }
+
+/* jQuery animation */
+.toggler {width: 500px; height: 200px; }
+  #button {padding: .5em 1em; text-decoration: none; }
+  #effect {width: 240px; height: 170px; padding: 0.4em; position: relative; }
+  #effect h3 {margin: 0; padding: 0.4em; text-align: center; }
 
 /******************************/
 /** ========== NAV ========= **/
 /******************************/
 
 #section-nav {
-  background-color: var(--nav-bkgd);
+  background-color: #555;
   padding: 5px 0;
 }
 
@@ -155,11 +170,6 @@ h2 {
   background-color: var(--nav-btn);
 }
 
-#section-intro,
-#section-portfolio,
-#section-contact {
-  margin: 20px 0;
-}
 /******************************/
 /** ========= INTRO ======== **/
 /******************************/
@@ -167,14 +177,9 @@ h2 {
 #section-intro {
   display: flex;
   flex-direction: row;
-  margin-top: 20px;
+  /*margin-top: 20px;*/
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url(../img/marble.jpg);
 }
-
-  /* background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url(../img/grunge-wood.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  color: #fff; */
-
 
 #intro-img {
   width: 30%;
@@ -403,10 +408,12 @@ footer {
 
 @media screen and (min-width: 650px) {
 
-  /* .responsive-img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
+  #hero-h1 {
+    font-size: 3em;
+  }
+
+  #hero-h2 {
+    font-size: 2.5em;
   }
 
   #content-contact {
