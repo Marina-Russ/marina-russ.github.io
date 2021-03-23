@@ -178,7 +178,8 @@ h2 {
   display: flex;
   flex-direction: row;
   /*margin-top: 20px;*/
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url(../img/marble.jpg);
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url(../img/marble.jpg); */
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
 }
 
 #intro-img {
