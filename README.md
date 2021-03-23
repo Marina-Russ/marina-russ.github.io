@@ -20,5 +20,5 @@ This site highlights some of the websites and web applications that I have made 
 <img src="img/screenshot-work.png" width="500">
 
 ### ❤️ Credits:
-* Marble background: [Madison Bracaglia](https://unsplash.com/photos/fcWAwPKpkTU)
+* #013 Heavy Rain Gradient [webgradients](webgradients.com)
 * Forest background [Sebastian Unrau](https://unsplash.com/photos/sp-p7uuT0tw)
