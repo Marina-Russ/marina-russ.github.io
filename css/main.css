@@ -8,7 +8,7 @@ backdrop-filter: blur( 4px );
 border-radius: 10px;
 
   */
-  --nav-btn: #4cbed9;
+  --nav-btn: rgb(68, 170, 136);
     /*
   background: rgba( 76, 190, 217, 0.25 );
 box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
@@ -17,7 +17,7 @@ backdrop-filter: blur( 4px );
 border-radius: 10px;
 
   */
-  --highlight: #f0742a;
+  --highlight: #e68147;
   /*
   background: rgba( 240, 116, 42, 0.25 );
 box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
@@ -30,25 +30,17 @@ border-radius: 10px;
   --white: #f9f6ef;
 }
 
-/** ===== TEMPORARY ==== **/
-#section-nav {
-  background-color: #333;
-}
-#section-hero {
-  height: 400px;
-}
-#section-intro {
-  background-color: var(--white);
-}
-
 /******************************/
 /** ===== GLOBAL STYLES ==== **/
 /******************************/
 body {
+  
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
   margin: 0;
-  background-color: #292a2d;
+  /*background-color: #292a2d;*/
+  background-color: #25222a;
+
   display: flex;
   flex-direction: column;
   justify-items: center;
@@ -133,7 +125,7 @@ h2 {
 /******************************/
 
 #section-nav {
-  background-color: #555;
+  background-color: #353b46;
   padding: 5px 0;
 }
 
@@ -143,7 +135,7 @@ h2 {
   color: var(--white);
   text-align: center;
   padding: 10px;
-  margin: 5px;
+  margin: 5px 10px 5px 5px;
   text-decoration: none;
   border-radius: 10px;
   cursor: pointer;
@@ -164,6 +156,7 @@ h2 {
 
 .cta {
   background-color: var(--highlight);
+  margin-right: 20px;
 }
 
 .btn {
@@ -177,9 +170,10 @@ h2 {
 #section-intro {
   display: flex;
   flex-direction: row;
-  /*margin-top: 20px;*/
+  margin-top: 60px;
   /* background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url(../img/marble.jpg); */
-  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+  /*background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);*/
+  background-color: #a3a3a3;
 }
 
 #intro-img {
@@ -289,6 +283,10 @@ h2 {
   color: #7f65a7;
 }
 
+#treat-yoshelf {
+  max-height: 210px;
+}
+
 /******************************/
 /** ========= ABOUT ======== **/
 /******************************/
@@ -328,6 +326,14 @@ h2 {
   margin: 0 auto;
   padding: 10px;
   border: 3px solid rgb(42, 224, 154);
+}
+
+.about-link {
+  color: #eb5c31;
+}
+
+.about-link:hover {
+  color: #fa3a00;
 }
 
 /******************************/
